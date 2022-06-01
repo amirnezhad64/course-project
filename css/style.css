@@ -11,7 +11,7 @@
     --color-primary-dark:#4865C8;
     --color-primary-light:#5e81f4;
     --color-secondary-dark:#c7cadd;
-    --color-secondary-light:##ccd6e8;
+    --color-secondary-light:#ccd6e8;
     --color-body:#343a40;
     --color-white:#fff;
     --color-heading:#000;
@@ -100,6 +100,13 @@ h2{
     .logo p{
         display: block;
     }
+}
+/* ICONS */
+.icon{
+    width: 35px;
+    height: 35px;
+    fill: var(--color-secondary-light);
+    cursor: pointer;
 }
 
 
