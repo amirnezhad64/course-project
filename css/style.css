@@ -52,7 +52,6 @@ h2{
 /* BUTTON */
 .btn{
     cursor: pointer;
-    margin: 1rem;
     padding: 1.5rem 3rem;
     outline: 0;
     border: 0;
@@ -74,7 +73,36 @@ h2{
     
 }
 
-/*  */
+/* LOGO */
+.logo{
+    width:130px;
+    height: 50px;
+    /* background-color: #c7cadd; */
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo .btn{
+ text-transform: uppercase;
+ font-size: 2.5rem;
+ font-family: "inter";
+ padding: 0.8rem 1.2rem;
+}
+.logo p{
+    color:var(--color-primary-light);
+    font-size: 2.3rem;
+    font-weight: 700;
+    display: none;
+}
+@media screen and (min-width:1024px) {
+
+    .logo p{
+        display: block;
+    }
+}
+
+
 
 
 
