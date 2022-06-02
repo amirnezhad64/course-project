@@ -107,7 +107,68 @@ h2{
     height: 35px;
     fill: var(--color-secondary-light);
     cursor: pointer;
+    
 }
+.icon:hover{
+fill: var(--color-primary-light);
+}
+
+/* MENU */
+.menu{
+    width: 200px;
+    height: 360px;
+    background-color:#f8f8f8f8;
+}
+.menu__list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:75px;
+    height:360px;
+    /* background-color: var(--color-white); */
+    
+}
+
+.menu__item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0;
+    margin-left: 1rem;
+    text-decoration: none;
+
+}
+
+.menu__item::after{
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    content: attr(data-tooltip);
+    white-space: nowrap;
+    font-weight: 700;
+    color: var(--color-secondary-light);
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.menu__item:hover::after{
+    color: var(--color-body);
+    opacity: 1;
+    visibility: visible;
+}
+@media screen and (min-width:1024px) {
+    .menu__item::after{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+}
+  
+   
+
 
 
 
