@@ -10,8 +10,8 @@
 :root{
     --color-primary-dark:#4865C8;
     --color-primary-light:#5e81f4;
-    --color-secondary-dark:#c7cadd;
-    --color-secondary-light:#ccd6e8;
+    --color-secondary-dark:#8da1bf;
+    --color-secondary-light:#f5f5fb;
     --color-body:#343a40;
     --color-white:#fff;
     --color-heading:#000;
@@ -57,7 +57,6 @@ h2{
     border: 0;
     border-radius: 12px;
    text-align: center;
-   letter-spacing: 0.1rem;
    font-size: 1.5rem;
    font-weight: 400;
 }
@@ -105,7 +104,7 @@ h2{
 .icon{
     width: 35px;
     height: 35px;
-    fill: var(--color-secondary-light);
+    fill: var(--color-secondary-dark);
     cursor: pointer;
     
 }
@@ -149,7 +148,7 @@ fill: var(--color-primary-light);
     content: attr(data-tooltip);
     white-space: nowrap;
     font-weight: 700;
-    color: var(--color-secondary-light);
+    color: var(--color-secondary-dark);
     opacity: 0;
     visibility: hidden;
     
@@ -166,7 +165,36 @@ fill: var(--color-primary-light);
     }
     
 }
-  
+/* UPGRADE */
+.upgrade{
+    width: 190px;
+    height:230px ;
+    background-color: var(--color-secondary-light);
+    margin: 5rem;
+    border-radius: 15px;
+    box-shadow: 2px 10px 8px #e8edf5 ;
+    position: relative;
+}
+ .intro__icon{
+    width: 100px;
+    height: 100px;
+    fill: var(--color-primary-dark);
+    position: absolute;
+    top: -10%;
+    left: 22%;
+    margin-bottom: 2rem;
+ }
+ .intro__detail{
+     padding: 6rem 3.5rem;
+ }
+ 
+ 
+.intro__detail p{
+    color:var(--color-secondary-dark); 
+    margin: 3rem 0;
+    text-align: center;
+}
+
    
 
 
