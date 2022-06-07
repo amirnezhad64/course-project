@@ -35,7 +35,7 @@ h1{
     font-size: 2.5rem;
 }
 h2{
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 .block{
     padding: 3rem 2rem;
@@ -49,10 +49,10 @@ h2{
         font-size:1.8rem ;
     }
     h1{
-        font-size:3.8rem ;
+        font-size:3rem ;
     }
     h2{
-        font-size:3.2rem ;
+        font-size:2.5rem ;
     }
     .block{
         padding: 6rem 2rem;
@@ -216,6 +216,71 @@ fill: var(--color-primary-light);
     height: 1024px;
     
 }
+/* !MAIN */
+/* SEARCHBOX */
+.main{
+    background-color:var(--color-secondary-light);
+    /* width: 929px; */
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__box{
+    width:300px ;
+    height: 35px;
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+   background-color: #fff;
+    /* box-shadow: 0 10px 20px #f3f3f3; */
+}
+
+
+.search__box input[type=search]{
+    all: unset;
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--color-secondary-light);
+    border-radius: 20px;
+    padding: 0 6rem;
+   
+}
+
+::placeholder{
+    color: #d8d9db;
+    font-size:1.5rem;
+}
+.search__box button{
+    all: unset;
+    opacity: 0.5;
+    position: absolute;
+    left: 5%;
+}
+.search__box button:hover{
+    opacity: 1;
+}
+.bell{
+    width: 35px;
+    height: 35px;
+}
+@media screen and (min-width:1024px) {
+    .search__box{
+        width:500px ;
+        height:40px
+    }
+    
+}
+
+
+
+
 
 
    
