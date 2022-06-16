@@ -11,8 +11,58 @@
     <title>course dashboard</title>
 </head>
 <body>
+    <main class="main container block ">
+
+         <section class=" search ">
+            <form class="search__box"  >
+                <input type="search" placeholder=" search" name="search" >
+                 <button type="submit">
+                    <svg class="icon" >
+                        <use xlink:href="/assets/images/svg-sprite.svg#magnify">
+                            </use>
+                    </svg>
+                </button>
+                
+             </form>
+             <svg class="icon" >
+                <use xlink:href="/assets/images/svg-sprite.svg#bell">
+                    </use>
+            </svg>
+        
+        </section> 
+        <nav class="nav">
+            <h2 class="nav__heading">All&nbspcourses</h2>
+            <div class="nav__toggler">
+                <i class="fa-solid fa-bars"></i>
+            </div> 
+            <ul class="nav__lists">
+                <li class="nav__items">
+                    <a href="#">Ongoing</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#">Favorite</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#">Complete</a>
+                </li>
+            </ul>
+        </nav>  
+
+          <div class="course">
+            <div class="course__design">
+                <img src="/assets/images/ux.png" alt="ui/ux design">
+            </div>
+            <div class="course__photo">
+              <img src="/assets/images/photography.png" alt=" photography">
+            </div>
+            <div class="course__animation">
+             <img src="/assets/images/animation.png" alt="animation">
+            </div>
+        </div>
+          
+    </main>
     
-    <!-- <script src="/js/main.js"></script> -->
+    <script src="/js/main.js"></script> 
 
     
 </body>
