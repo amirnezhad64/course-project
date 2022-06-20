@@ -221,9 +221,9 @@ fill: var(--color-primary-light);
 /* SEARCHBOX */
 .main{
     background-color:var(--color-secondary-light);
-    /* width: 929px;
-    height: 1140px;  
-     */
+    /* width: 1210px;
+    height: 1140px;   */
+    
 } 
 .search{
     display: flex;
@@ -391,6 +391,31 @@ fill: var(--color-primary-light);
         display: none;
     } */
 
+/* !RIGHT */
+/* FORM */
+.ux input[type=range] {
+ -webkit-appearance: none;
+ border: 1px solid #EEF2FD;
+ border-radius: 50px;
+ width: 150px;
+ height: 10px;
+ background-color:#eef2fd ;
+ cursor: pointer;
+  }
+.ux input[type=range]::-webkit-slider-thumb {
+      display: none;
+  }
+.ux input[type=range]::-webkit-slider-runnable-track {
+      max-width: 70%;
+      height: 10px;
+      background: var(--color-primary-light);
+      border-radius: 50px;
+  }
+  
+  
+  
+ 
+ 
 
 
 
