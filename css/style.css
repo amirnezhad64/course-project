@@ -392,51 +392,31 @@ fill: var(--color-primary-light);
     } */
 
 /* !RIGHT */
+
 /* FORM */
-.ux input[type=range] {
+.progress{
+    margin-top: 2rem;
+}
+.progress__form input[type=range] {
  -webkit-appearance: none;
- border: 1px solid #EEF2FD;
- border-radius: 50px;
- width: 150px;
- height: 10px;
- background-color:#eef2fd ;
+ border-radius: 40px;
+ width: 100px;
+ height: 8px;
  cursor: pointer;
+ background-color:#eef2fd ;
+ display: none;
   }
-.ux input[type=range]::-webkit-slider-thumb {
+  .progress__form input[type=range]::-webkit-slider-thumb {
       display: none;
   }
-.ux input[type=range]::-webkit-slider-runnable-track {
+
+.progress__form input[type=range]::-webkit-slider-runnable-track {
       max-width: 70%;
-      height: 10px;
+      height: 8px;
       background: var(--color-primary-light);
-      border-radius: 50px;
+      border-radius: 40px;
   }
-  
-  
-  
  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
 
 
 
