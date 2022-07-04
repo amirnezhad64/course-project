@@ -394,8 +394,14 @@ fill: var(--color-primary-light);
 /* !RIGHT */
 
 /* FORM */
+.right{
+    height: 100%;
+}
+.right-section{
+    margin-left: 1rem;
+}
 .progress{
-    margin-top: 2rem;
+    margin: 4rem 0;
 }
 .progress__form input[type=range] {
  -webkit-appearance: none;
@@ -470,6 +476,7 @@ fill: var(--color-primary-light);
       font-weight: 700;
       text-shadow: 0px 4px 4px #CCCCCC;
       margin-bottom: 0.5rem;
+      cursor: pointer;
   }
   .progress__level{
     font-size: 1.3rem;
@@ -492,7 +499,7 @@ fill: var(--color-primary-light);
 
      /* UPCOMING TASKS */
      .task{
-        margin-top: 2rem;
+        margin: 4rem 0;
     }
     .task__list{
         display: flex;
@@ -511,6 +518,7 @@ fill: var(--color-primary-light);
     .task__title{
         font-size: 1.5rem;
         font-weight: 700;
+        cursor: pointer;
     }
     .task__time{
         font-size: 1.3rem;
@@ -524,6 +532,7 @@ fill: var(--color-primary-light);
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        margin-bottom: 6rem;
        
     }
     .profile select{
@@ -531,9 +540,10 @@ fill: var(--color-primary-light);
         font-size: 1.5rem;
         font-weight: 700;
         color: #343a40;
+        cursor: pointer;
 
     }
- 
+    
 
   
 
