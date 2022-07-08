@@ -39,7 +39,7 @@ h2{
     font-size: 2.2rem;
 }
 .block{
-    padding: 3rem 2rem;
+    padding: 5rem 4rem;
 }
 .container{
     /* max-width: 1140px; */
@@ -57,7 +57,7 @@ h2{
         font-size:2.5rem ;
     }
     .block{
-        padding: 6rem 2rem;
+        padding: 6rem 3rem;
     }
     
 }
@@ -65,16 +65,19 @@ h2{
 .left{
     width: 100%;
     height: 100%;  
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
 }
 /* BUTTON */
 .btn{
     cursor: pointer;
-    padding: 1.5rem 6rem;
+    padding: 1rem 4rem;
     outline: 0;
     border: 0;
     border-radius: 12px;
    text-align: center;
-   font-size: 1.5rem;
+   font-size: 1.8rem;
    font-weight: 400;
    white-space: nowrap;
    overflow: hidden;
@@ -84,27 +87,25 @@ h2{
     color:var(--color-white)
 }
 .btn-block{
-    /* padding: 1.5rem 4rem;  */
-    /* margin: 5rem 0; */
-    /* margin-left: 1rem; */
- 
+    /* padding: 1.5rem 6rem;  */
 }
 
 @media screen and (min-width:768px) {
     .btn{
         font-size: 1.8rem;
-        padding: 1.5rem 3rem;
+        padding: 1.5rem 2rem;
     }
     
 }
 
 /* LOGO */
 .logo{
-    width:130px;
-    height: 50px;
+    /* width:130px;
+    height: 50px; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
+    gap: 2rem;
   
 }
 .logo .btn{
@@ -127,11 +128,10 @@ h2{
 }
 /* ICONS */
 .icon{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     fill: var(--color-secondary-dark);
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 .icon:hover{
 fill: var(--color-primary-light);
@@ -139,20 +139,22 @@ fill: var(--color-primary-light);
 
 /* MENU */
 .menu{
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 4rem;
 }
 
  .menu .menu__item{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
     padding: 1rem;
     text-align: center;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    background-color:var(--color-secondary-light);
     
 }
 .menu__item a{
@@ -171,23 +173,22 @@ fill: var(--color-primary-light);
         justify-content: flex-start;
         gap: 3rem;
     }
-    .menu .menu__item{
-        gap: 3rem;
+   
     
-    }
+    
+}
 /* UPGRADE */
 .upgrade{
-    width: 150px;
-    height:250px ;
+    
     background-color: var(--color-secondary-light);
     border-radius: 15px;
     box-shadow: 2px 10px 8px #e8edf5 ;
     position: relative;
-    /* margin-left: 1.5rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding:2rem 4.5rem ;
    
 }
 
@@ -197,16 +198,26 @@ fill: var(--color-primary-light);
     fill: var(--color-primary-dark);
     position: absolute;
     top: -20%;
-    left: 19%; 
+    right: auto;
+    left: auto;
+ }
+ .intro__detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem; 
  }
 .intro__detail p{
-    color:var(--color-secondary-dark); 
-    padding: 2rem 0;
+
+    color:var(--color-secondary-dark);
+    font-size: 1.6rem;
+    /* padding: 2rem 2rem; */
     text-align: center;
+    margin-top: 5rem;
 }
 .intro__detail .btn{
-   margin-left: 2rem;
-   margin-top: 2rem;
+   margin-top: 4rem;
 }
  
 /* !MAIN */
@@ -562,13 +573,19 @@ fill: var(--color-primary-light);
     }
 
     /* ! ALL OF CODE */
-    @media screen and (min-width:1024px) {
+    .page{
+        display: grid;
+        grid-template-columns: 17% 60% 23%;
+    }
+
+    @media screen and (max-width:1024px) {
         .page{
             display: grid;
-            grid-template-columns: 15% 60% 25%;
+            grid-template-columns: 3fr 7fr;
         }
       
     }
+
     @media screen and (max-width:768px) {
         .page{
             display: flex;
